@@ -3,9 +3,43 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Bootstrap Material Design -->
+    <link href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css" rel="stylesheet">
+    <link href="bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet">
+      
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    
+    <div>
+<a href="javascript:void(0)" class="btn btn-raised active"><code>.active</code></a>
+<a href="javascript:void(0)" class="btn btn-raised btn-default">Default</a>
+<a href="javascript:void(0)" class="btn btn-raised btn-primary">Primary</a>
+<a href="javascript:void(0)" class="btn btn-raised btn-success">Success</a>
+<a href="javascript:void(0)" class="btn btn-raised btn-info">Info</a>
+<a href="javascript:void(0)" class="btn btn-raised btn-warning">Warning</a>
+<a href="javascript:void(0)" class="btn btn-raised btn-danger">Danger</a>
+<a href="javascript:void(0)" class="btn btn-raised btn-link">Link</a>
+    </div>
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>   
+    <script>
+      $(function () {
+        $.material.init();
+      
+      });
+    </script>           
   </body>
 </html>
